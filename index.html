@@ -4,29 +4,38 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
   <title>Weather2</title>
 </head>
 <body>
+  <div class="weather-app">
   <header>
-    <form>
-      <input type="search" placeholder="Enter A City" required />
-      <input type="submit" value="search" />
+    <form class="search-form">
+      <input type="search" placeholder="Enter A City" required class="search-form-input" />
+      <input type="submit" value="search" class="search-form-button" />
     </form>
 </header>
   <main>
+    <div class="weather-app-data">
     <div>
-  <h1>Belfast</h1>
-  <p> Friday 16:02 cloudy
+  <h1 class="weather-app-city">Belfast</h1>
+  <p class="weather-app-details"> 
+    Friday 16:02 cloudy
     <br />
-     Humidity: 66% Wind: 3.13km/hr
+     Humidity: <strong>66%</strong> Wind: <strong>3.13km/hr</strong>
     </p>
     </div>
-    <div>⛅12°C</div>
+    <div class="weather-app-temperature-container">
+      <div class="weather-app-icon"> ⛅</div>
+      <div class="weather-app-temperature">12</div>
+      <civ class="weather-app-unit">°C</div>
+    </div>
   </main>
-
   <footer>This project was coded by 
     <a href="https://github.com/faicat99" target="_blank">Fainche Mckeown </a>open-sourced on <a href="https://github.com/faicat99/weather2" target="_blank">GitHub</a>
     and hosted on <a href="https://curious-croissant-ea6208.netlify.app" target="_blank">Netlify</a>
   </footer>
+  </div>
+</div>
 </body>
 </html>
