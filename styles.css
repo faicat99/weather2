@@ -93,6 +93,7 @@ main {
   }
 
 .weather-forecast-date {
+    text-align: center;
     font-size: 14px;
     text-align: center;
     line-height: 20px;
@@ -104,15 +105,21 @@ main {
 .weather-forecast-icon {
     font-size: 38px;
     margin-bottom: 10px;
-
+    text-align: center;
 }
 
 .weather-forecast-temperatures {
-    font-size: 14px;
+    text-align: center;
+    
     color: magenta;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-
+.weather-forecast-temperature {
+    padding: 0 5px 0 15px;
+}
 
 footer {
     border-top: 1px solid rgb(221, 215, 215);
